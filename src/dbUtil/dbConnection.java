@@ -8,7 +8,7 @@ import java.sql.SQLException;
         private static final String SQCCNN = "jdbc:sqlite:mit.sqllite";
 
 
-        private  static Connection getConntion() throws SQLException {
+        public static Connection getConnection() throws SQLException {
             try {
                 Class.forName("org.sqlite.JDBC");
                 return DriverManager.getConnection(SQCCNN);
@@ -17,5 +17,5 @@ import java.sql.SQLException;
 
             }
             return null;
-
+        }
         }//class
