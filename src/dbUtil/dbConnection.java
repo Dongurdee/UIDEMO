@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
     public class dbConnection {
-        private static final String SQCCNN = "jdbc:sqlite:mit.sqllite";
+        private static final String SQCCNN = "jdbc:sqlite:mit.sqlite";
 
 
         public static Connection getConnection() throws SQLException {
