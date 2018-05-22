@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
@@ -7,13 +8,12 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <AnchorPane layoutY="5.0" prefHeight="388.0" prefWidth="305.0" style="-fx-background-color: #64b5f6;">
+      <AnchorPane layoutY="-8.0" prefHeight="409.0" prefWidth="305.0" style="-fx-background-color: #64b5f6;">
          <children>
             <FontAwesomeIconView glyphName="GIFT" layoutX="114.0" layoutY="171.0" size="90" wrappingWidth="77.0" />
-            <Label layoutX="26.0" layoutY="187.0" text="Wecome to MIT SAIYAI " textFill="#f2f2f2">
+            <Label layoutX="26.0" layoutY="187.0" text="Welcome to MIT SAIYAI " textFill="#f2f2f2">
                <font>
                   <Font size="24.0" />
                </font>
@@ -21,9 +21,10 @@
             <Label layoutX="21.0" layoutY="361.0" text="CopyRight @SAI" textFill="#041f79" />
          </children>
       </AnchorPane>
-      <JFXTextField labelFloat="true" layoutX="384.0" layoutY="55.0" promptText="username" />
-      <JFXPasswordField labelFloat="true" layoutX="384.0" layoutY="114.0" promptText="password" />
-      <FontAwesomeIconView glyphName="USER" layoutX="350.0" layoutY="76.0" size="20" text="" />
-      <FontAwesomeIconView layoutX="350.0" layoutY="135.0" size="20" />
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="384.0" layoutY="55.0" promptText="username" />
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="384.0" layoutY="114.0" promptText="password" />
+      <FontAwesomeIconView glyphName="USER" layoutX="352.0" layoutY="74.0" size="20" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="354.0" layoutY="131.0" size="20" />
+      <JFXButton fx:id="btnLogin" layoutX="384.0" layoutY="174.0" onAction="#Login" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #64b5f6;" text="Login" textFill="WHITE" />
    </children>
 </AnchorPane>
